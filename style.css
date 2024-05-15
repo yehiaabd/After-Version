@@ -1,8 +1,29 @@
-::-webkit-scrollbar{
-    background-color: rgb(55, 16, 95);
+html{
+    scroll-behavior: smooth;
 }
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button,
+input,
+textarea,
+select,
+option,
+label {
+    font-size: calc(1rem + 1px);
+}
+::-webkit-scrollbar{
+    background-color: rgba(51, 29, 194, 0.612);}
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(100, 23, 176);
+    background-color: rgb(51, 29, 194);
 }
 header{
     position: fixed;
@@ -16,18 +37,4 @@ header{
 .card:hover{
     transform: scale(1.1);
 }
-@keyframes sec1Animation {
-    0% {
-        opacity: 0;
-        transform: translateY(-200px);
-    }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-#sec1 {
-    animation: sec1Animation .7s ease-out;
-}
